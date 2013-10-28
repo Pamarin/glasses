@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JInternalFrameFormInfo">
+  <Properties>
+    <Property name="frameIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+      <Image iconType="3" name="/ApplicationPresentation/Icons/black/png/info_icon&amp;16.png"/>
+    </Property>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <Events>
+    <EventHandler event="internalFrameClosed" listener="javax.swing.event.InternalFrameListener" parameters="javax.swing.event.InternalFrameEvent" handler="formInternalFrameClosed"/>
+  </Events>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="lblProgramName" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDatabaseVersion" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDatabaseType" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblProgramVersion" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                          <Component id="lblProgramNameVal" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDatabaseVersionVal" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblDatabaseTypeVal" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="lblProgramVersionVal" alignment="0" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblProgramName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblProgramNameVal" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblProgramVersion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblProgramVersionVal" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblDatabaseType" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDatabaseTypeVal" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lblDatabaseVersion" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lblDatabaseVersionVal" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="136" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lblProgramName">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Program name:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblProgramVersion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Program version:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDatabaseType">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Database type:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDatabaseVersion">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Database version:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblProgramNameVal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="lblProgramNameVal"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblProgramVersionVal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="lblProgramVersionVal"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDatabaseTypeVal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="lblDatabaseTypeVal"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="lblDatabaseVersionVal">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="lblDatabaseVersionVal"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/ApplicationPresentation/Icons/black/png/info_icon&amp;48.png"/>
+        </Property>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
