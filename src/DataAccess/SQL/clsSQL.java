@@ -15,7 +15,7 @@ public class clsSQL {
     private ArrayList<clsSQLRelation> pSQLRelation;
     private ArrayList<clsSQLField> pSQLOrdering;
     private ArrayList<String> pTable;
-    private enmSQLType pSQLType;
+    private final enmSQLType pSQLType;
     
     public enum enmSQLType {
         Select,

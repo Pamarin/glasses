@@ -14,9 +14,9 @@ import java.util.ArrayList;
  * @author jean
  */
 public class clsUpdate {
-    private clsProgram pProgram;
-    private iDatabase pDatabase;
-    private ArrayList<iUpdate> pUpdates;
+    private final clsProgram pProgram;
+    private final iDatabase pDatabase;
+    private final ArrayList<iUpdate> pUpdates;
     
     public clsUpdate(clsProgram aProgram) {
         this.pProgram = aProgram;

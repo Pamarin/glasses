@@ -13,7 +13,7 @@ import javax.swing.text.PlainDocument;
  * @author jean
  */
 public class clsTextFieldLimit extends PlainDocument {
-    private int pLimit;
+    private final int pLimit;
     
     public clsTextFieldLimit(int aLimit) {
         super();

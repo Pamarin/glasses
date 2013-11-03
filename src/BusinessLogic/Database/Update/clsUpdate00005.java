@@ -14,7 +14,7 @@ import java.sql.SQLException;
  * @author jean
  */
 public class clsUpdate00005 implements iUpdate {
-    private iDatabase pDatabase;
+    private final iDatabase pDatabase;
     
     public clsUpdate00005(iDatabase aDatabase) {
         this.pDatabase = aDatabase;

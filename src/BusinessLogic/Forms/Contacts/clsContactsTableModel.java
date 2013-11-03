@@ -22,8 +22,8 @@ import javax.swing.table.AbstractTableModel;
 public class clsContactsTableModel extends AbstractTableModel {
     private Object[][] pDataArray;
     private ResultSet pDataResultSet;
-    private clsProgram pProgram;
-    private String[] columnNames = {"First name", "Last name", "Type"};
+    private final clsProgram pProgram;
+    private final String[] columnNames = {"First name", "Last name", "Type"};
     
     public clsContactsTableModel(clsProgram aProgram) {
         this.pProgram = aProgram;
@@ -122,7 +122,7 @@ public class clsContactsTableModel extends AbstractTableModel {
                     mContactsDetails.setLastName(this.pDataResultSet.getString(this.pProgram.getDatabase().getField(new clsSQLField("Contacts", "LastName"))));
                     try {
                         mContactsDetails.setBirthday(this.pDataResultSet.getDate(this.pProgram.getDatabase().getField(new clsSQLField("Contacts", "Birthday"))));
-                    } catch (Exception ex) {
+                    } catch (SQLException ex) {
                         // TODO: Hanlde this nicer.
                     }
                     mContactsDetails.setGender(this.pDataResultSet.getString(this.pProgram.getDatabase().getField(new clsSQLField("Contacts", "Gender"))));

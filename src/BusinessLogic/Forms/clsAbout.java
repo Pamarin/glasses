@@ -10,12 +10,13 @@ import javax.swing.Icon;
  * @author jean
  */
 public class clsAbout {
-    private clsProgram pProgram;
-    private clsFileAccess pFileAccess;
+    private final clsProgram pProgram;
+    private final clsFileAccess pFileAccess;
 
     /**
         * The business logic for the About form.
         * @author Jean-Luc Burot (http://www.audienz.eu/en/home/contact)
+     * @param aProgram
         * @since 1
         */
     public clsAbout(clsProgram aProgram) {

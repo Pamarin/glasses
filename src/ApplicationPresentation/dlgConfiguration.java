@@ -33,6 +33,8 @@ public class dlgConfiguration extends javax.swing.JDialog {
     
     /**
      * Creates new form dlgConfiguration
+     * @param parent
+     * @param modal
      */
     public dlgConfiguration(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
@@ -576,6 +578,7 @@ public class dlgConfiguration extends javax.swing.JDialog {
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
+            @Override
             public void run() {
                 dlgConfiguration dialog = new dlgConfiguration(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {

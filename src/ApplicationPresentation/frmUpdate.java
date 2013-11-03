@@ -13,15 +13,17 @@ import BusinessLogic.clsProgram;
  * @author jean
  */
 public class frmUpdate extends javax.swing.JInternalFrame {
-    private frmMain pMainForm;
-    private clsMain pMainClass;
-    private clsUpdate pUpdate;
-    private clsProgram pProgram;
+    private final frmMain pMainForm;
+    private final clsMain pMainClass;
+    private final clsUpdate pUpdate;
+    private final clsProgram pProgram;
     private int pCurrentDatabaseVersion;
     private int pUpdateDatabaseVersion;
     
     /**
      * Creates new form frmUpdate
+     * @param aMainForm
+     * @param aMainClass
      */
     public frmUpdate(frmMain aMainForm, clsMain aMainClass) {
         this.pMainForm = aMainForm;

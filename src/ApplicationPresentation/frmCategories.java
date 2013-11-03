@@ -26,9 +26,9 @@ import javax.swing.tree.*;
  * @author jean
  */
 public class frmCategories extends javax.swing.JInternalFrame {
-    private frmMain pMainForm;
-    private clsProgram pProgram;
-    private clsCategories pModel;
+    private final frmMain pMainForm;
+    private final clsProgram pProgram;
+    private final clsCategories pModel;
     private boolean pStartUp;
     private enmStatus pStatus;
     private clsCategoryDetail pCategoryDetail;
@@ -40,6 +40,8 @@ public class frmCategories extends javax.swing.JInternalFrame {
 
     /**
      * Creates new form frmCategories
+     * @param aMainForm
+     * @param aProgram
      */
     public frmCategories(frmMain aMainForm, clsProgram aProgram) {
         this.pStartUp = true;

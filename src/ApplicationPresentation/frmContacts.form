@@ -135,7 +135,7 @@
               <Layout>
                 <DimensionLayout dim="0">
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="grpPersonal" alignment="0" pref="513" max="32767" attributes="0"/>
+                      <Component id="grpPersonal" alignment="0" pref="515" max="32767" attributes="0"/>
                       <Component id="grpModifications" alignment="0" max="32767" attributes="0"/>
                       <Component id="grpAddress" alignment="0" max="32767" attributes="0"/>
                       <Component id="grpAvailability" alignment="0" max="32767" attributes="0"/>

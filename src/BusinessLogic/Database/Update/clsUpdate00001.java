@@ -7,13 +7,14 @@ package BusinessLogic.Database.Update;
 import DataAccess.Database.iDatabase;
 import DataAccess.SQL.clsSQL;
 import DataAccess.SQL.clsSQLField;
+import java.sql.SQLException;
 
 /**
  *
  * @author jean
  */
 public class clsUpdate00001 implements iUpdate {
-    private iDatabase pDatabase;
+    private final iDatabase pDatabase;
     
     public clsUpdate00001(iDatabase aDatabase) {
         this.pDatabase = aDatabase;
@@ -46,7 +47,7 @@ public class clsUpdate00001 implements iUpdate {
             this.pDatabase.QueryExecuteAffectedRows(mSQL);
             
             return true;
-        } catch (Exception ex) {
+        } catch (SQLException ex) {
             return false;
         }
     }

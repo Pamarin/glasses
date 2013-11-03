@@ -22,7 +22,7 @@ import javax.swing.tree.TreeModel;
  * @author jean
  */
 public class clsCategories {
-    private clsProgram pProgram;
+    private final clsProgram pProgram;
     public enum enmArea {
         Goods,
         Shops

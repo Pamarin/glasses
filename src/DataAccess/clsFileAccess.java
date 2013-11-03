@@ -40,7 +40,7 @@ public class clsFileAccess {
 	 */
 	private ArrayList<File> find(File path, String regexname, boolean recursive, enumFileAndDirectory faf) {
 		//New instance of ArrayList for the matches.
-		ArrayList<File> matches = new ArrayList<File>();
+		ArrayList<File> matches = new ArrayList<>();
 		//Get all files and directories from the search directory.
 		File[] files = path.listFiles();
 		//Preset for files and directories to be included in the matches.
@@ -150,8 +150,8 @@ public class clsFileAccess {
 	/**
 	 * Searches for a given file at a given location.
 	 * @author Jean-Luc Burot (http://www.audienz.eu/en/home/contact)
+         * @param directoryname
 	 * @since 0.0.0.8
-	 * @param filename The name of the file.
 	 * @param path The path to search in.
 	 * @param recursive The option whether the path shall be searched recursively.
 	 * @return Returns an ArrayList<File> of files matching the options.

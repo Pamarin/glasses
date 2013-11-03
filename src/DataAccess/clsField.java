@@ -6,9 +6,9 @@ package DataAccess;
  */
 public class clsField {
 
-	private int fieldtype;
-	private String fieldname;
-	private Object val;
+	private final int fieldtype;
+	private final String fieldname;
+	private final Object val;
 	
 	/**
 	 * Handles a database field.

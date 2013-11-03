@@ -18,7 +18,7 @@ import javax.swing.table.AbstractTableModel;
  * @author jean
  */
 public class clsContacts {
-    private clsProgram pProgram;
+    private final clsProgram pProgram;
     
     public enum enmSavingMode {
         New,

@@ -11,7 +11,7 @@ import BusinessLogic.clsProgram;
  * @author jean
  */
 public class clsMain {
-    private clsProgram pProgram;
+    private final clsProgram pProgram;
     
     public clsMain() {
         this.pProgram = new clsProgram();
@@ -20,12 +20,7 @@ public class clsMain {
     public boolean updateNecessary() {
         int mCurrentDatabaseVersion = this.pProgram.getCurrentDatabaseVersion();
         int mUpdateDatabaseVersion = this.pProgram.getProgramDatabaseVersion();
-
-        if (mCurrentDatabaseVersion != mUpdateDatabaseVersion) {
-            return true;
-        } else {
-            return false;
-        }
+        return mCurrentDatabaseVersion != mUpdateDatabaseVersion;
     }
     
     public clsProgram getProgram() {

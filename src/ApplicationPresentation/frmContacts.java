@@ -28,9 +28,9 @@ import javax.swing.event.ListSelectionListener;
  * @author jean
  */
 public class frmContacts extends javax.swing.JInternalFrame {
-    private frmMain pMainForm;
-    private clsProgram pProgram;
-    private clsContacts pModel;
+    private final frmMain pMainForm;
+    private final clsProgram pProgram;
+    private final clsContacts pModel;
     private enmStatus pStatus;
     private int pSelectedRow;
     ListSelectionModel pContactSelectionModel;

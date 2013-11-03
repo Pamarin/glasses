@@ -107,12 +107,7 @@ public class clsMySQL extends clsDatabase {
         ResultSet rs = mStatement.executeQuery(mSQL);
         rs.last();
         int rowsAffected = rs.getRow();
-
-        if (rowsAffected > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return rowsAffected > 0;
     }
 
     @Override
@@ -140,12 +135,7 @@ public class clsMySQL extends clsDatabase {
         ResultSet rs = this.pStatement.executeQuery(mSQL);
         rs.last();
         int rowsAffected = rs.getRow();
-
-        if (rowsAffected > 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return rowsAffected > 0;
     }
 
     @Override

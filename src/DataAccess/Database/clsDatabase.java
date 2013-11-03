@@ -55,7 +55,7 @@ public class clsDatabase implements iDatabase {
             }
             
             return true;
-        } catch (Exception e) {
+        } catch (SQLException e) {
             return false;
         }
     }

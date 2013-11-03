@@ -7,12 +7,12 @@ import java.sql.*;
  * @author jean
  */
 public class clsDatabaseAccess {
-	private String usr;
-	private String pwd;
+	private final String usr;
+	private final String pwd;
 	private String dbname;
-	private String dblocation;
+	private final String dblocation;
 	private Connection con;
-	private enmDatabaseType databasetype;
+	private final enmDatabaseType databasetype;
 	
 	public enum enmDatabaseType {
 		MySQL
@@ -40,13 +40,9 @@ public class clsDatabaseAccess {
 					returnval = true;
 					break;
 			}
-                } catch (InstantiationException e) {
+                } catch (    InstantiationException | ClassNotFoundException | IllegalAccessException e) {
                     //TODO: Handle this exception properly.
-		} catch (ClassNotFoundException e) {
-                    //TODO: Handle this exception properly.
-                } catch (IllegalAccessException e) {
-                    //TODO: Handle this exception properly.
-                }
+		}
 		
 		return returnval;
 	}
@@ -86,7 +82,7 @@ public class clsDatabaseAccess {
 			stmt.close();
 			con.close();
 			
-		} catch (Exception e) {
+		} catch (SQLException e) {
 			System.out.println(e);
 		}
 		
@@ -99,7 +95,7 @@ public class clsDatabaseAccess {
 	
 	public void createDatabase(String dbname, boolean setdatabase) {
 		try {
-			if (dbname == this.dbname) {
+			if (dbname.equals(this.dbname)) {
 				throw new Exception("Database already in use.");
 			}
 			
@@ -128,19 +124,13 @@ public class clsDatabaseAccess {
 			Statement stmt = con.createStatement();
 			stmt.executeUpdate("DROP DATABASE " + dbname + ";");
 			
-			if(this.dbname == dbname && setdatabase == true) {
+			if(this.dbname.equals(dbname) && setdatabase == true) {
 				this.dbname = "";
 			}
 			
 			stmt.close();
 			con.close();
-		} catch (ClassNotFoundException e) {
-			//TODO: Handle this exception properly.
-		} catch (InstantiationException e) {
-			//TODO: Handle this exception properly.
-		} catch (IllegalAccessException e) {
-			//TODO: Handle this exception properly.
-		} catch (SQLException e) {
+		} catch (    ClassNotFoundException | InstantiationException | IllegalAccessException | SQLException e) {
 			//TODO: Handle this exception properly.
 		}
 	}

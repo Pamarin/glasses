@@ -8,7 +8,7 @@ import java.sql.SQLException;
  * @author jean
  */
 public class clsQuery {
-	private String sql;
+	private final String sql;
 	private clsField[][] table;
 	
 	/**

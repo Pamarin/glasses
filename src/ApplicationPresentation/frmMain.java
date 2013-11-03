@@ -20,7 +20,7 @@ import javax.swing.UnsupportedLookAndFeelException;
  */
 public class frmMain extends javax.swing.JFrame {
     // Manual variables declaration
-    private BusinessLogic.Forms.clsMain pMain;
+    private final BusinessLogic.Forms.clsMain pMain;
     
     private ApplicationPresentation.frmAbout frmAbout1;
     private ApplicationPresentation.frmCategories frmCategories1;

@@ -25,7 +25,7 @@ public class clsProgram {
     public final int ProgramVersion = 1;
     
     private iDatabase pDatabase;
-    private clsConfiguration pConfiguration;
+    private final clsConfiguration pConfiguration;
     
     public clsProgram() {
         System.setProperty("program.name", ProgramName.replaceAll(" ", ""));
@@ -35,7 +35,7 @@ public class clsProgram {
     public boolean DatabaseAccessible() {
         try {
             return getDatabase().Connect(false);
-        } catch (Exception ex) {
+        } catch (SQLException ex) {
             return false;
         }
     }

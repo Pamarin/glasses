@@ -16,9 +16,9 @@ import javax.swing.JOptionPane;
  * @author jean
  */
 public class frmSettings extends javax.swing.JInternalFrame {
-    private frmMain pMainForm;
-    private clsMain pMainClass;
-    private clsSettings pSettings;
+    private final frmMain pMainForm;
+    private final clsMain pMainClass;
+    private final clsSettings pSettings;
     private boolean pIsStartup;
     
     private enum enmStatus {
@@ -28,6 +28,8 @@ public class frmSettings extends javax.swing.JInternalFrame {
     
     /**
      * Creates new form frmSettings
+     * @param aMainForm
+     * @param aMainClass
      */
     public frmSettings(frmMain aMainForm, clsMain aMainClass) {
         this.pMainForm = aMainForm;

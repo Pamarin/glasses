@@ -9,10 +9,10 @@ package DataAccess.SQL;
  * @author jean
  */
 public class clsSQLRelation {
-    private clsSQLField pField1;
+    private final clsSQLField pField1;
     private clsSQLField pField2;
     private String pField2String;
-    private enmRelationType pRelationType;
+    private final enmRelationType pRelationType;
     
     public enum enmRelationType {
         Where,

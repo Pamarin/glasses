@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author jean
  */
 public class clsAvailabilityList {
-    private ArrayList<clsAvailabilityDetail> pContactAvailabilities;
+    private final ArrayList<clsAvailabilityDetail> pContactAvailabilities;
     
     public clsAvailabilityList() {
         this.pContactAvailabilities = new ArrayList();

@@ -9,8 +9,8 @@ package DataAccess.SQL;
  * @author jean
  */
 public class clsSQLField {
-    private String pTable;
-    private String pField;
+    private final String pTable;
+    private final String pField;
     private enmFieldType pFieldType;
     private boolean pIsNotNull;
     private boolean pIsAutoIncrement;

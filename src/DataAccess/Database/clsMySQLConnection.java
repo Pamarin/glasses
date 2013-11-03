@@ -17,7 +17,7 @@ import java.util.logging.Logger;
  */
 public class clsMySQLConnection implements iDatabaseConnection {
     private Connection pConnection;
-    private clsConfiguration pConfiguration;
+    private final clsConfiguration pConfiguration;
     
     public clsMySQLConnection(clsConfiguration aConfiguration) {
         this.pConfiguration = aConfiguration;

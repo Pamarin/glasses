@@ -9,7 +9,7 @@ import java.util.Properties;
  * @author jean
  */
 public class clsConfigurationFileAccess {
-	private clsFileAccess fa;
+	private final clsFileAccess fa;
 	
 	/**
 	 * Manipulating the configuration file.
@@ -49,9 +49,9 @@ public class clsConfigurationFileAccess {
 	/**
 	 * Sets the configuration of on value tu a key.
 	 * @author Jean-Luc Burot (http://www.audienz.eu/en/home/contact)
-	 * @param String k The key for the value.
-	 * @param String v The value for the key.
-	 * @param boolean keepconfigfile True when the existing config file shall be kept, False when it may be overwritten.
+	 * @param k String The key for the value.
+	 * @param v String The value for the key.
+	 * @param keepconfigfile boolean True when the existing config file shall be kept, False when it may be overwritten.
 	 * @return Returns the state of success.
 	 * @throws IOException when the Properties.storeToXML(...) method fails.
 	 */
@@ -80,7 +80,7 @@ public class clsConfigurationFileAccess {
 	/**
 	 * Gets the configuration for a key.
 	 * @author Jean-Luc Burot (http://www.audienz.eu/en/home/contact)
-	 * @param String k The key for the value.
+	 * @param k String The key for the value.
 	 * @return Returns the value for the key.
 	 * @throws IOException when the Properties.loadFromXML(...) method fails.
 	 * @throws InvalidPropertiesFormatException when the Properties.loadFromXML(...) method could not properly read the XML file entries.

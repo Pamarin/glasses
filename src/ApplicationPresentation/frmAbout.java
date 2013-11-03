@@ -12,12 +12,14 @@ import BusinessLogic.Forms.clsMain;
  * @author jean
  */
 public class frmAbout extends javax.swing.JInternalFrame {
-    private frmMain pMainForm;
-    private clsMain pMainClass;
-    private clsAbout pAbout;
+    private final frmMain pMainForm;
+    private final clsMain pMainClass;
+    private final clsAbout pAbout;
     
     /**
      * Creates new form frmAbout
+     * @param aMainForm
+     * @param aMainClass
      */
     public frmAbout(frmMain aMainForm, clsMain aMainClass) {
         this.pMainForm = aMainForm;
